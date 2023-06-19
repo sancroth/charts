@@ -214,7 +214,7 @@ master:
   ##
   startupProbe:
     enabled: true
-    initialDelaySeconds: 21
+    initialDelaySeconds: 22
     periodSeconds: 6
     timeoutSeconds: 6
     successThreshold: 1
