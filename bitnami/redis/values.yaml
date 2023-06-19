@@ -213,9 +213,9 @@ master:
   ## @param master.startupProbe.successThreshold Success threshold for startupProbe
   ##
   startupProbe:
-    enabled: false
-    initialDelaySeconds: 20
-    periodSeconds: 5
+    enabled: true
+    initialDelaySeconds: 21
+    periodSeconds: 6
     timeoutSeconds: 6
     successThreshold: 1
     failureThreshold: 5
@@ -228,7 +228,7 @@ master:
   ##
   livenessProbe:
     enabled: true
-    initialDelaySeconds: 20
+    initialDelaySeconds: 21
     periodSeconds: 5
     timeoutSeconds: 5
     successThreshold: 1
@@ -242,8 +242,8 @@ master:
   ##
   readinessProbe:
     enabled: true
-    initialDelaySeconds: 20
-    periodSeconds: 5
+    initialDelaySeconds: 21
+    periodSeconds: 6
     timeoutSeconds: 1
     successThreshold: 1
     failureThreshold: 5
